@@ -1,5 +1,4 @@
 function timeEquality(A){
-  const len = A.length;
   let max = A[0];
   let ans = 0
   for (let num of A){
