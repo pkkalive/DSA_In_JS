@@ -1,10 +1,10 @@
 function LeftRotateByOne(arr) {
-    let val = arr[0];
-    let i = 0;
-    for (; i < arr.length - 1; i++) {
+    const len = arr.length;
+    const val = arr[0];
+    for (let i = 0; i < len - 1; i++) {
         arr[i] = arr[i + 1];
     }
-    arr[i] = val;
+    arr[len - 1] = val;
     return arr;
 }
 
