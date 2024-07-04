@@ -4,12 +4,11 @@ function FrequesncySortedArray(arr) {
     while (i < len) {
         let j = i + 1, freq = 1;
         while (j < len) {
-            if (arr[i] === arr[j]) {
-                j++;
-                freq++;
-            } else {
+            if (arr[i] !== arr[j]) {
                 break;
             }
+            j++;
+            freq++;
         }
         console.log(`${arr[i]} : ${freq}`);
         i = j;
